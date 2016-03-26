@@ -7,15 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A2E3C381CA06A6000EA9F6A /* CLWeeklyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C2B1CA06A6000EA9F6A /* CLWeeklyCalendarView.m */; };
+		6A2E3C391CA06A6000EA9F6A /* DailyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C2D1CA06A6000EA9F6A /* DailyCalendarView.m */; };
+		6A2E3C3A1CA06A6000EA9F6A /* DayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C2F1CA06A6000EA9F6A /* DayTitleLabel.m */; };
+		6A2E3C3B1CA06A6000EA9F6A /* NSDate+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C311CA06A6000EA9F6A /* NSDate+CL.m */; };
+		6A2E3C3C1CA06A6000EA9F6A /* NSDictionary+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C331CA06A6000EA9F6A /* NSDictionary+CL.m */; };
+		6A2E3C3D1CA06A6000EA9F6A /* UIColor+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C351CA06A6000EA9F6A /* UIColor+CL.m */; };
+		6A2E3C3E1CA06A6000EA9F6A /* UIImage+CL.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C371CA06A6000EA9F6A /* UIImage+CL.m */; };
 		6A9DF2A01C7FD2C700F0E4A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF29F1C7FD2C700F0E4A0 /* main.m */; };
 		6A9DF2A31C7FD2C700F0E4A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2A21C7FD2C700F0E4A0 /* AppDelegate.m */; };
-		6A9DF2A61C7FD2C700F0E4A0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2A51C7FD2C700F0E4A0 /* FirstViewController.m */; };
-		6A9DF2A91C7FD2C800F0E4A0 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2A81C7FD2C800F0E4A0 /* SecondViewController.m */; };
 		6A9DF2AC1C7FD2C800F0E4A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2AA1C7FD2C800F0E4A0 /* Main.storyboard */; };
 		6A9DF2AE1C7FD2C800F0E4A0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2AD1C7FD2C800F0E4A0 /* Assets.xcassets */; };
 		6A9DF2B11C7FD2C800F0E4A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2AF1C7FD2C800F0E4A0 /* LaunchScreen.storyboard */; };
 		6A9DF2BC1C7FD2C800F0E4A0 /* natLangMockupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2BB1C7FD2C800F0E4A0 /* natLangMockupTests.m */; };
 		6A9DF2C71C7FD2C800F0E4A0 /* natLangMockupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2C61C7FD2C800F0E4A0 /* natLangMockupUITests.m */; };
+		6A9DF2E41C7FD97500F0E4A0 /* Purchase Order-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2E31C7FD97500F0E4A0 /* Purchase Order-30.png */; };
+		6A9DF2E61C7FD9DB00F0E4A0 /* Reading-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2E51C7FD9DB00F0E4A0 /* Reading-30.png */; };
+		6A9DF2E91C7FDA5300F0E4A0 /* Classroom-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2E71C7FDA5300F0E4A0 /* Classroom-30.png */; };
+		6A9DF2EA1C7FDA5300F0E4A0 /* Report Card-30.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2E81C7FDA5300F0E4A0 /* Report Card-30.png */; };
+		6A9DF2EC1C7FDAE700F0E4A0 /* Classroom-30 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2EB1C7FDAE700F0E4A0 /* Classroom-30 (1).png */; };
+		6A9DF2EF1C7FDB4A00F0E4A0 /* AssignmentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2EE1C7FDB4A00F0E4A0 /* AssignmentController.m */; };
+		6A9DF2F21C7FDB5F00F0E4A0 /* LectureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2F11C7FDB5F00F0E4A0 /* LectureController.m */; };
+		6A9DF2F51C7FDB7800F0E4A0 /* ReadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2F41C7FDB7800F0E4A0 /* ReadingController.m */; };
+		6A9DF2F81C7FDB8B00F0E4A0 /* SyllabusController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2F71C7FDB8B00F0E4A0 /* SyllabusController.m */; };
+		6A9DF2FB1C8100E100F0E4A0 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF2FA1C8100E100F0E4A0 /* TableViewController.m */; };
+		6A9DF3001C81052400F0E4A0 /* Hard to Find-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2FC1C81052400F0E4A0 /* Hard to Find-52.png */; };
+		6A9DF3011C81052400F0E4A0 /* Stack of Photos Filled-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2FD1C81052400F0E4A0 /* Stack of Photos Filled-50.png */; };
+		6A9DF3021C81052400F0E4A0 /* Map Marker-52 (1).png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2FE1C81052400F0E4A0 /* Map Marker-52 (1).png */; };
+		6A9DF3031C81052400F0E4A0 /* Pencil-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF2FF1C81052400F0E4A0 /* Pencil-52.png */; };
+		6A9DF3071C8106C500F0E4A0 /* TableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9DF3051C8106C500F0E4A0 /* TableViewCell.m */; };
+		6A9DF3081C8106C500F0E4A0 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF3061C8106C500F0E4A0 /* TableViewCell.xib */; };
+		6A9DF30E1C810D5B00F0E4A0 /* Book-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF3091C810D5B00F0E4A0 /* Book-52.png */; };
+		6A9DF30F1C810D5B00F0E4A0 /* Link-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF30A1C810D5B00F0E4A0 /* Link-52.png */; };
+		6A9DF3101C810D5B00F0E4A0 /* Note-48.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF30B1C810D5B00F0E4A0 /* Note-48.png */; };
+		6A9DF3111C810D5B00F0E4A0 /* PowerPoint-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF30C1C810D5B00F0E4A0 /* PowerPoint-52.png */; };
+		6A9DF3121C810D5B00F0E4A0 /* Video File-52.png in Resources */ = {isa = PBXBuildFile; fileRef = 6A9DF30D1C810D5B00F0E4A0 /* Video File-52.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,14 +62,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A2E3C2A1CA06A6000EA9F6A /* CLWeeklyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWeeklyCalendarView.h; sourceTree = "<group>"; };
+		6A2E3C2B1CA06A6000EA9F6A /* CLWeeklyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLWeeklyCalendarView.m; sourceTree = "<group>"; };
+		6A2E3C2C1CA06A6000EA9F6A /* DailyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyCalendarView.h; sourceTree = "<group>"; };
+		6A2E3C2D1CA06A6000EA9F6A /* DailyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DailyCalendarView.m; sourceTree = "<group>"; };
+		6A2E3C2E1CA06A6000EA9F6A /* DayTitleLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DayTitleLabel.h; sourceTree = "<group>"; };
+		6A2E3C2F1CA06A6000EA9F6A /* DayTitleLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DayTitleLabel.m; sourceTree = "<group>"; };
+		6A2E3C301CA06A6000EA9F6A /* NSDate+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+CL.h"; sourceTree = "<group>"; };
+		6A2E3C311CA06A6000EA9F6A /* NSDate+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+CL.m"; sourceTree = "<group>"; };
+		6A2E3C321CA06A6000EA9F6A /* NSDictionary+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+CL.h"; sourceTree = "<group>"; };
+		6A2E3C331CA06A6000EA9F6A /* NSDictionary+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+CL.m"; sourceTree = "<group>"; };
+		6A2E3C341CA06A6000EA9F6A /* UIColor+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CL.h"; sourceTree = "<group>"; };
+		6A2E3C351CA06A6000EA9F6A /* UIColor+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CL.m"; sourceTree = "<group>"; };
+		6A2E3C361CA06A6000EA9F6A /* UIImage+CL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CL.h"; sourceTree = "<group>"; };
+		6A2E3C371CA06A6000EA9F6A /* UIImage+CL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CL.m"; sourceTree = "<group>"; };
 		6A9DF29B1C7FD2C700F0E4A0 /* natLangMockup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = natLangMockup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9DF29F1C7FD2C700F0E4A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		6A9DF2A11C7FD2C700F0E4A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6A9DF2A21C7FD2C700F0E4A0 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		6A9DF2A41C7FD2C700F0E4A0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		6A9DF2A51C7FD2C700F0E4A0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		6A9DF2A71C7FD2C700F0E4A0 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		6A9DF2A81C7FD2C800F0E4A0 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		6A9DF2AB1C7FD2C800F0E4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A9DF2AD1C7FD2C800F0E4A0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A9DF2B01C7FD2C800F0E4A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,6 +90,33 @@
 		6A9DF2C21C7FD2C800F0E4A0 /* natLangMockupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = natLangMockupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A9DF2C61C7FD2C800F0E4A0 /* natLangMockupUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = natLangMockupUITests.m; sourceTree = "<group>"; };
 		6A9DF2C81C7FD2C800F0E4A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A9DF2E31C7FD97500F0E4A0 /* Purchase Order-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Purchase Order-30.png"; sourceTree = "<group>"; };
+		6A9DF2E51C7FD9DB00F0E4A0 /* Reading-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Reading-30.png"; sourceTree = "<group>"; };
+		6A9DF2E71C7FDA5300F0E4A0 /* Classroom-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Classroom-30.png"; sourceTree = "<group>"; };
+		6A9DF2E81C7FDA5300F0E4A0 /* Report Card-30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Report Card-30.png"; sourceTree = "<group>"; };
+		6A9DF2EB1C7FDAE700F0E4A0 /* Classroom-30 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Classroom-30 (1).png"; sourceTree = "<group>"; };
+		6A9DF2ED1C7FDB4A00F0E4A0 /* AssignmentController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssignmentController.h; sourceTree = "<group>"; };
+		6A9DF2EE1C7FDB4A00F0E4A0 /* AssignmentController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssignmentController.m; sourceTree = "<group>"; };
+		6A9DF2F01C7FDB5F00F0E4A0 /* LectureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LectureController.h; sourceTree = "<group>"; };
+		6A9DF2F11C7FDB5F00F0E4A0 /* LectureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LectureController.m; sourceTree = "<group>"; };
+		6A9DF2F31C7FDB7800F0E4A0 /* ReadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReadingController.h; sourceTree = "<group>"; };
+		6A9DF2F41C7FDB7800F0E4A0 /* ReadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReadingController.m; sourceTree = "<group>"; };
+		6A9DF2F61C7FDB8B00F0E4A0 /* SyllabusController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SyllabusController.h; sourceTree = "<group>"; };
+		6A9DF2F71C7FDB8B00F0E4A0 /* SyllabusController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SyllabusController.m; sourceTree = "<group>"; };
+		6A9DF2F91C8100E100F0E4A0 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		6A9DF2FA1C8100E100F0E4A0 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		6A9DF2FC1C81052400F0E4A0 /* Hard to Find-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Hard to Find-52.png"; sourceTree = "<group>"; };
+		6A9DF2FD1C81052400F0E4A0 /* Stack of Photos Filled-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Stack of Photos Filled-50.png"; sourceTree = "<group>"; };
+		6A9DF2FE1C81052400F0E4A0 /* Map Marker-52 (1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Map Marker-52 (1).png"; sourceTree = "<group>"; };
+		6A9DF2FF1C81052400F0E4A0 /* Pencil-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pencil-52.png"; sourceTree = "<group>"; };
+		6A9DF3041C8106C500F0E4A0 /* TableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewCell.h; sourceTree = "<group>"; };
+		6A9DF3051C8106C500F0E4A0 /* TableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewCell.m; sourceTree = "<group>"; };
+		6A9DF3061C8106C500F0E4A0 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
+		6A9DF3091C810D5B00F0E4A0 /* Book-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Book-52.png"; sourceTree = "<group>"; };
+		6A9DF30A1C810D5B00F0E4A0 /* Link-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Link-52.png"; sourceTree = "<group>"; };
+		6A9DF30B1C810D5B00F0E4A0 /* Note-48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Note-48.png"; sourceTree = "<group>"; };
+		6A9DF30C1C810D5B00F0E4A0 /* PowerPoint-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PowerPoint-52.png"; sourceTree = "<group>"; };
+		6A9DF30D1C810D5B00F0E4A0 /* Video File-52.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Video File-52.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,17 +167,41 @@
 		6A9DF29D1C7FD2C700F0E4A0 /* natLangMockup */ = {
 			isa = PBXGroup;
 			children = (
+				6A2E3C2A1CA06A6000EA9F6A /* CLWeeklyCalendarView.h */,
+				6A2E3C2B1CA06A6000EA9F6A /* CLWeeklyCalendarView.m */,
+				6A2E3C2C1CA06A6000EA9F6A /* DailyCalendarView.h */,
+				6A2E3C2D1CA06A6000EA9F6A /* DailyCalendarView.m */,
+				6A2E3C2E1CA06A6000EA9F6A /* DayTitleLabel.h */,
+				6A2E3C2F1CA06A6000EA9F6A /* DayTitleLabel.m */,
+				6A2E3C301CA06A6000EA9F6A /* NSDate+CL.h */,
+				6A2E3C311CA06A6000EA9F6A /* NSDate+CL.m */,
+				6A2E3C321CA06A6000EA9F6A /* NSDictionary+CL.h */,
+				6A2E3C331CA06A6000EA9F6A /* NSDictionary+CL.m */,
+				6A2E3C341CA06A6000EA9F6A /* UIColor+CL.h */,
+				6A2E3C351CA06A6000EA9F6A /* UIColor+CL.m */,
+				6A2E3C361CA06A6000EA9F6A /* UIImage+CL.h */,
+				6A2E3C371CA06A6000EA9F6A /* UIImage+CL.m */,
 				6A9DF2A11C7FD2C700F0E4A0 /* AppDelegate.h */,
 				6A9DF2A21C7FD2C700F0E4A0 /* AppDelegate.m */,
-				6A9DF2A41C7FD2C700F0E4A0 /* FirstViewController.h */,
-				6A9DF2A51C7FD2C700F0E4A0 /* FirstViewController.m */,
-				6A9DF2A71C7FD2C700F0E4A0 /* SecondViewController.h */,
-				6A9DF2A81C7FD2C800F0E4A0 /* SecondViewController.m */,
 				6A9DF2AA1C7FD2C800F0E4A0 /* Main.storyboard */,
 				6A9DF2AD1C7FD2C800F0E4A0 /* Assets.xcassets */,
 				6A9DF2AF1C7FD2C800F0E4A0 /* LaunchScreen.storyboard */,
 				6A9DF2B21C7FD2C800F0E4A0 /* Info.plist */,
+				6A9DF2D41C7FD81000F0E4A0 /* Images */,
 				6A9DF29E1C7FD2C700F0E4A0 /* Supporting Files */,
+				6A9DF2ED1C7FDB4A00F0E4A0 /* AssignmentController.h */,
+				6A9DF2EE1C7FDB4A00F0E4A0 /* AssignmentController.m */,
+				6A9DF2F01C7FDB5F00F0E4A0 /* LectureController.h */,
+				6A9DF2F11C7FDB5F00F0E4A0 /* LectureController.m */,
+				6A9DF2F31C7FDB7800F0E4A0 /* ReadingController.h */,
+				6A9DF2F41C7FDB7800F0E4A0 /* ReadingController.m */,
+				6A9DF2F61C7FDB8B00F0E4A0 /* SyllabusController.h */,
+				6A9DF2F71C7FDB8B00F0E4A0 /* SyllabusController.m */,
+				6A9DF2F91C8100E100F0E4A0 /* TableViewController.h */,
+				6A9DF2FA1C8100E100F0E4A0 /* TableViewController.m */,
+				6A9DF3041C8106C500F0E4A0 /* TableViewCell.h */,
+				6A9DF3051C8106C500F0E4A0 /* TableViewCell.m */,
+				6A9DF3061C8106C500F0E4A0 /* TableViewCell.xib */,
 			);
 			path = natLangMockup;
 			sourceTree = "<group>";
@@ -143,6 +230,27 @@
 				6A9DF2C81C7FD2C800F0E4A0 /* Info.plist */,
 			);
 			path = natLangMockupUITests;
+			sourceTree = "<group>";
+		};
+		6A9DF2D41C7FD81000F0E4A0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				6A9DF3091C810D5B00F0E4A0 /* Book-52.png */,
+				6A9DF30A1C810D5B00F0E4A0 /* Link-52.png */,
+				6A9DF30B1C810D5B00F0E4A0 /* Note-48.png */,
+				6A9DF30C1C810D5B00F0E4A0 /* PowerPoint-52.png */,
+				6A9DF30D1C810D5B00F0E4A0 /* Video File-52.png */,
+				6A9DF2FC1C81052400F0E4A0 /* Hard to Find-52.png */,
+				6A9DF2FD1C81052400F0E4A0 /* Stack of Photos Filled-50.png */,
+				6A9DF2FE1C81052400F0E4A0 /* Map Marker-52 (1).png */,
+				6A9DF2FF1C81052400F0E4A0 /* Pencil-52.png */,
+				6A9DF2EB1C7FDAE700F0E4A0 /* Classroom-30 (1).png */,
+				6A9DF2E71C7FDA5300F0E4A0 /* Classroom-30.png */,
+				6A9DF2E81C7FDA5300F0E4A0 /* Report Card-30.png */,
+				6A9DF2E51C7FD9DB00F0E4A0 /* Reading-30.png */,
+				6A9DF2E31C7FD97500F0E4A0 /* Purchase Order-30.png */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +357,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				6A9DF2B11C7FD2C800F0E4A0 /* LaunchScreen.storyboard in Resources */,
+				6A9DF2E61C7FD9DB00F0E4A0 /* Reading-30.png in Resources */,
+				6A9DF2E91C7FDA5300F0E4A0 /* Classroom-30.png in Resources */,
 				6A9DF2AE1C7FD2C800F0E4A0 /* Assets.xcassets in Resources */,
+				6A9DF3081C8106C500F0E4A0 /* TableViewCell.xib in Resources */,
+				6A9DF3011C81052400F0E4A0 /* Stack of Photos Filled-50.png in Resources */,
+				6A9DF2EC1C7FDAE700F0E4A0 /* Classroom-30 (1).png in Resources */,
+				6A9DF3121C810D5B00F0E4A0 /* Video File-52.png in Resources */,
+				6A9DF30F1C810D5B00F0E4A0 /* Link-52.png in Resources */,
+				6A9DF3111C810D5B00F0E4A0 /* PowerPoint-52.png in Resources */,
+				6A9DF3021C81052400F0E4A0 /* Map Marker-52 (1).png in Resources */,
+				6A9DF2E41C7FD97500F0E4A0 /* Purchase Order-30.png in Resources */,
+				6A9DF3001C81052400F0E4A0 /* Hard to Find-52.png in Resources */,
+				6A9DF2EA1C7FDA5300F0E4A0 /* Report Card-30.png in Resources */,
 				6A9DF2AC1C7FD2C800F0E4A0 /* Main.storyboard in Resources */,
+				6A9DF3101C810D5B00F0E4A0 /* Note-48.png in Resources */,
+				6A9DF3031C81052400F0E4A0 /* Pencil-52.png in Resources */,
+				6A9DF30E1C810D5B00F0E4A0 /* Book-52.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,10 +398,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A9DF2A91C7FD2C800F0E4A0 /* SecondViewController.m in Sources */,
+				6A2E3C391CA06A6000EA9F6A /* DailyCalendarView.m in Sources */,
+				6A2E3C3E1CA06A6000EA9F6A /* UIImage+CL.m in Sources */,
 				6A9DF2A31C7FD2C700F0E4A0 /* AppDelegate.m in Sources */,
-				6A9DF2A61C7FD2C700F0E4A0 /* FirstViewController.m in Sources */,
+				6A2E3C3D1CA06A6000EA9F6A /* UIColor+CL.m in Sources */,
+				6A2E3C3C1CA06A6000EA9F6A /* NSDictionary+CL.m in Sources */,
 				6A9DF2A01C7FD2C700F0E4A0 /* main.m in Sources */,
+				6A9DF2F21C7FDB5F00F0E4A0 /* LectureController.m in Sources */,
+				6A2E3C3A1CA06A6000EA9F6A /* DayTitleLabel.m in Sources */,
+				6A9DF2F51C7FDB7800F0E4A0 /* ReadingController.m in Sources */,
+				6A9DF2F81C7FDB8B00F0E4A0 /* SyllabusController.m in Sources */,
+				6A2E3C3B1CA06A6000EA9F6A /* NSDate+CL.m in Sources */,
+				6A9DF3071C8106C500F0E4A0 /* TableViewCell.m in Sources */,
+				6A9DF2FB1C8100E100F0E4A0 /* TableViewController.m in Sources */,
+				6A2E3C381CA06A6000EA9F6A /* CLWeeklyCalendarView.m in Sources */,
+				6A9DF2EF1C7FDB4A00F0E4A0 /* AssignmentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,6 +638,7 @@
 				6A9DF2CD1C7FD2C800F0E4A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A9DF2CE1C7FD2C800F0E4A0 /* Build configuration list for PBXNativeTarget "natLangMockupTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +647,7 @@
 				6A9DF2D01C7FD2C800F0E4A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6A9DF2D11C7FD2C800F0E4A0 /* Build configuration list for PBXNativeTarget "natLangMockupUITests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +656,7 @@
 				6A9DF2D31C7FD2C800F0E4A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

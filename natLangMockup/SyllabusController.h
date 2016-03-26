@@ -1,5 +1,5 @@
 //
-//  SecondViewController.h
+//  SyllabusController.h
 //  natLangMockup
 //
 //  Created by Mariah Flaim on 2/25/16.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SecondViewController : UIViewController
-
+@interface SyllabusController : UIViewController
 
 @end
-
