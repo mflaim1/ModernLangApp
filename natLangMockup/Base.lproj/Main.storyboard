@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Assignment Controller-->
@@ -42,6 +43,95 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1552" y="46"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="OYz-Vi-qgY">
+            <objects>
+                <viewController storyboardIdentifier="QuizViewController" id="bEB-Np-2J7" customClass="QuizViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DWW-1i-jEv"/>
+                        <viewControllerLayoutGuide type="bottom" id="uez-vj-LCq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hAw-OZ-jYB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQ4-LL-Mmf">
+                                <rect key="frame" x="20" y="560" width="560" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="wkM-X7-5ts"/>
+                                </constraints>
+                                <state key="normal" title="Submit Answers"/>
+                                <connections>
+                                    <action selector="selectedSubmitAnswers:" destination="bEB-Np-2J7" eventType="touchUpInside" id="uuc-Nz-wPr"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F6Q-g2-oEg">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="59"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PEQ-kf-hZg">
+                                        <rect key="frame" x="7" y="15" width="48" height="30"/>
+                                        <state key="normal" title="Cancel"/>
+                                        <connections>
+                                            <action selector="cancel:" destination="bEB-Np-2J7" eventType="touchUpInside" id="6R1-I4-Sl1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GFS-y1-Yep">
+                                        <rect key="frame" x="552" y="15" width="34" height="30"/>
+                                        <state key="normal" title="Save"/>
+                                        <connections>
+                                            <action selector="save:" destination="bEB-Np-2J7" eventType="touchUpInside" id="uAs-eY-fzF"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="GFS-y1-Yep" firstAttribute="centerY" secondItem="F6Q-g2-oEg" secondAttribute="centerY" id="DLj-Xp-c0v"/>
+                                    <constraint firstAttribute="trailing" secondItem="GFS-y1-Yep" secondAttribute="trailing" constant="14" id="QKr-gG-8sO"/>
+                                    <constraint firstAttribute="height" constant="59" id="Vza-8m-N9Q"/>
+                                    <constraint firstItem="PEQ-kf-hZg" firstAttribute="baseline" secondItem="GFS-y1-Yep" secondAttribute="baseline" id="kdT-kN-jgz"/>
+                                    <constraint firstItem="PEQ-kf-hZg" firstAttribute="leading" secondItem="F6Q-g2-oEg" secondAttribute="leading" constant="7" id="pIR-lx-RRc"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zps-7j-zCE">
+                                <rect key="frame" x="0.0" y="67" width="600" height="485"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Bdn-1U-96o">
+                                        <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Bdn-1U-96o" id="6G0-2j-xAk">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="F6Q-g2-oEg" secondAttribute="trailing" constant="-20" id="GOl-RT-Sf8"/>
+                            <constraint firstItem="zps-7j-zCE" firstAttribute="top" secondItem="F6Q-g2-oEg" secondAttribute="bottom" constant="8" symbolic="YES" id="Kvh-BO-1R0"/>
+                            <constraint firstItem="uez-vj-LCq" firstAttribute="top" secondItem="YQ4-LL-Mmf" secondAttribute="bottom" constant="10" id="R2E-pC-R59"/>
+                            <constraint firstItem="YQ4-LL-Mmf" firstAttribute="top" secondItem="zps-7j-zCE" secondAttribute="bottom" constant="8" symbolic="YES" id="UWA-ij-mbt"/>
+                            <constraint firstItem="F6Q-g2-oEg" firstAttribute="leading" secondItem="hAw-OZ-jYB" secondAttribute="leadingMargin" constant="-20" id="XQ6-gk-bVm"/>
+                            <constraint firstItem="zps-7j-zCE" firstAttribute="leading" secondItem="F6Q-g2-oEg" secondAttribute="leading" id="cRT-sS-uk1"/>
+                            <constraint firstItem="zps-7j-zCE" firstAttribute="centerX" secondItem="YQ4-LL-Mmf" secondAttribute="centerX" id="dQa-XU-W22"/>
+                            <constraint firstItem="zps-7j-zCE" firstAttribute="trailing" secondItem="F6Q-g2-oEg" secondAttribute="trailing" id="foM-no-cZh"/>
+                            <constraint firstItem="F6Q-g2-oEg" firstAttribute="top" secondItem="hAw-OZ-jYB" secondAttribute="top" id="gHH-Ag-hww"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="tTn-JE-ne8">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="NFp-LR-7Ew"/>
+                        <barButtonItem key="rightBarButtonItem" title="Save" id="p5N-Qv-cSa"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="quizTableView" destination="zps-7j-zCE" id="3Go-Vx-Qxj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tK4-36-Jj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3212" y="-113"/>
         </scene>
         <!--Reading Controller-->
         <scene sceneID="rNk-2J-tfQ">

@@ -8,6 +8,7 @@
 
 #import "AssignmentController.h"
 #import "TableViewCell.h"
+#import "QuizViewController.h"
 @interface AssignmentController ()
 
 @end
@@ -93,7 +94,16 @@ static CGFloat CALENDER_VIEW_HEIGHT = 150.f;
  
  return cell;
  }
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    QuizViewController* vc = [storyboard instantiateViewControllerWithIdentifier:@"QuizViewController"];
+    //[self.playerControls closePlayer:YES animated:YES];
+    //self.playerControls.locked = YES;
+    [self presentViewController:vc animated:YES completion:nil];
 
+  
+}
 
 
 /*
@@ -130,16 +140,16 @@ static CGFloat CALENDER_VIEW_HEIGHT = 150.f;
  }
  */
 
-/*
 
-/*
+
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
+ //In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
+    //Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end
