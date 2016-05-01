@@ -17,7 +17,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
-    self.firebaseRef = [[Firebase alloc] initWithUrl:@"https://modernlang.firebaseio.com/"];
+    /*self.firebaseRef = [[Firebase alloc] initWithUrl:@"https://modernlang.firebaseio.com/"];
+    self.firebaseCourses = [[Firebase alloc] initWithUrl:@"https://modernlang.firebaseio.com/courses"];
+    [self.firebaseCourses observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot){
+        NSLog(@"%@",snapshot.value);
+        
+    }];*/
     return YES;
 }
 

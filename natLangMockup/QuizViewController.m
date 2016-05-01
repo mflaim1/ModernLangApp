@@ -16,27 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _questionArray=[NSArray arrayWithObjects:@"Question 1",@"Question2",@"Question 3",@"Question 4" ,@"Question 5",nil];
-    NSArray*question1=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    NSArray*question2=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    NSArray*question4=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    NSArray*question5=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    NSArray*question3=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    _answerArray=[NSDictionary dictionaryWithObjectsAndKeys:question1,@"one",question2,@"two",question3,@"three",question4,@"four",question5,@"five", nil];
-    _quizTableView.delegate=self;
-    _quizTableView.dataSource=self;
+
     // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{
-     NSLog(@"hi");
     _questionArray=[NSArray arrayWithObjects:@"Question 1",@"Question2",@"Question 3",@"Question 4" ,@"Question 5",nil];
-    NSArray*question1=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    NSArray*question2=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    NSArray*question4=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    NSArray*question5=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    NSArray*question3=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
-    _answerArray=[NSDictionary dictionaryWithObjectsAndKeys:question1,@"one",question2,@"two",question3,@"three",question4,@"four",question5,@"five", nil];
-    _quizTableView.delegate=self;
+    self.question1=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
+    self.question2=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
+   self.question4=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
+    self.question5=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
+    self.question3=[NSArray arrayWithObjects:@"Answer 1",@"Answer 2", @"Answer 3",@"Answer 4", nil];
+       _quizTableView.delegate=self;
     _quizTableView.dataSource=self;
 }
 - (void)didReceiveMemoryWarning {
@@ -45,7 +35,6 @@
 }
 - (IBAction)cancel:(id)sender {
     //go back to previous view
-    NSLog(@"hi");
     [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 
 }
@@ -58,20 +47,41 @@
 
 - (IBAction)selectedSubmitAnswers:(id)sender {
     //TO DO: save and submit answers to teacher
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    [self.navigationController popToRootViewControllerAnimated:YES];
 
 }
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    return 1;
+    return [self.questionArray count];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
-    return 25;
+    return 4;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
+-(UIView*)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
+    
+    UIView* customView = [[UIView alloc] init];
+    UILabel * headerLabel = [[UILabel alloc] initWithFrame:CGRectZero];
+    
+
+    headerLabel.numberOfLines = 0;
+    headerLabel.lineBreakMode =NSLineBreakByWordWrapping;
+    headerLabel.text=self.questionArray[section];
+    
+    [headerLabel sizeToFit];
+    [customView setBackgroundColor:[UIColor colorWithRed:0.64f green:0.68f blue:0.72f alpha:1.0f]];
+    [customView addSubview:headerLabel];
+    
+    return  customView;
+    
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
     return 100;
 }
 
@@ -82,64 +92,39 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:cellIdentifier];
         
     }
-    if(indexPath.row==0||indexPath.row==5||indexPath.row==10||indexPath.row==15||indexPath.row==20){
-        cell.imageView.image=nil;
-          cell.selectionStyle = UITableViewCellSelectionStyleNone;
-    }else{
-        cell.selectionStyle = UITableViewCellSelectionStyleDefault;
-
-        cell.imageView.image=[UIImage imageNamed:@"unchecked.png"];
+    if (indexPath.section==0){
+        cell.textLabel.text=self.question1[indexPath.row];
+        
+    } if (indexPath.section==1){
+        cell.textLabel.text=self.question2[indexPath.row];
+    } if (indexPath.section==2){
+        cell.textLabel.text=self.question3[indexPath.row];
+    } if (indexPath.section==3){
+        cell.textLabel.text=self.question4[indexPath.row];
+    } if (indexPath.section==4){
+        cell.textLabel.text=self.question5[indexPath.row];
     }
-    NSMutableArray *answers=[[NSMutableArray alloc]init];
-    if(indexPath.row==0){
-        cell.textLabel.text=_questionArray[0];
-    }if(indexPath.row>0&&indexPath.row<=4){
-        cell.imageView.image=[UIImage imageNamed:@"unchecked.png"];
-        answers=_answerArray[@"one"];
-        NSLog(@"%@",answers[0]);
-        cell.textLabel.text=answers[(indexPath.row)-1];
-        
-    }if(indexPath.row==5){
-        cell.textLabel.text=_questionArray[1];
-
-        
-    }if(indexPath.row>5&&indexPath.row<=9){
-        cell.imageView.image=[UIImage imageNamed:@"unchecked.png"];
-        answers=_answerArray[@"two"];
-        cell.textLabel.text=answers[indexPath.row-6];
-    }if(indexPath.row==10){
-        cell.textLabel.text=_questionArray[2];
-
-    }if(indexPath.row>10&&indexPath.row<=14){
-        cell.imageView.image=[UIImage imageNamed:@"unchecked.png"];
-
-        answers=_answerArray[@"three"];
-        cell.textLabel.text=answers[indexPath.row-11];
-    }if(indexPath.row==15){
-        cell.textLabel.text=_questionArray[3];
-
-    }if(indexPath.row>15&&indexPath.row<=19){
-        cell.imageView.image=[UIImage imageNamed:@"unchecked.png"];
-        answers=_answerArray[@"four"];
-        cell.textLabel.text=answers[indexPath.row-16];
-    }if(indexPath.row==20){
-        cell.textLabel.text=_questionArray[4];
-
-    }if(indexPath.row>20&&indexPath.row<=24){
-        cell.imageView.image=[UIImage imageNamed:@"unchecked.png"];
-        answers=_answerArray[@"five"];
-        cell.textLabel.text=answers[indexPath.row-21];
-    }
-        
+    UIImage *image =[UIImage imageNamed:@"unchecked"];
+    cell.imageView.image =image;
+   
+   
     return cell;
 }
 
 -(NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     if(cell.selectionStyle == UITableViewCellSelectionStyleNone){
-        return nil;
+        
     }
-    return indexPath;
+   return indexPath;
+}
+
+-(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    
+    UIImage *highlightedImage =[UIImage imageNamed:@"checked"];
+    cell.imageView.image =highlightedImage;
 }
 
 /*

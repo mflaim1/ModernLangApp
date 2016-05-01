@@ -23,19 +23,35 @@ static CGFloat CALENDER_VIEW_HEIGHT = 150.f;
         _calendarView.delegate = self;
     }
     
+    
     // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{
-    self.assignmentArray=[NSArray arrayWithObjects:@"Map Exercise",@"Photo Excercise",@"Response Exercise",@"Scavengar Hunt",nil];
-    self.dueDateArray=[NSArray arrayWithObjects:@"Due by Monday",@"Due by Thursday",@"Due by Thursday",@"Due by Friday",nil];
-    self.imageArray=[NSArray arrayWithObjects:@"Map Marker-52 (1).png",@"Stack of Photos Filled-50.png",@"Pencil-52.png",@"Hard to Find-52.png",nil];
+    self.network=[Network sharedNetwork];
+    self.network.delegate=self;
+    self.models=[Models sharedModel];
+    [self.network getCourses];
+   
+
     [self loadTable];
-    }
+    
+
+}
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark - Delegate Methods
+-(void)courseDownloaded{
+    self.assignmentDictionary=[[self.models courses]getAssignmentsForCourse:@"-KEV170rLW8uhE_7mH3k"];
+    self.assignmentArray=[[NSMutableArray alloc]init];
+    [self.assignmentDictionary enumerateKeysAndObjectsUsingBlock:^(id key, id value, BOOL* stop) {
+        [self.assignmentArray addObject:key];
+        
+    }];
+    [_assignmentTableView reloadData];
+}
 
 -(void)loadTable{
     _assignmentTableView=[[UITableView alloc]initWithFrame:CGRectMake(0,60+CALENDER_VIEW_HEIGHT,self.view.bounds.size.width, self.view.bounds.size.height-(CALENDER_VIEW_HEIGHT+60)) ];
@@ -43,6 +59,7 @@ static CGFloat CALENDER_VIEW_HEIGHT = 150.f;
     _assignmentTableView.dataSource=self;
     [self.view addSubview:self.calendarView];
     [self.view addSubview:self.assignmentTableView];
+    
     
 
 }
@@ -61,7 +78,6 @@ static CGFloat CALENDER_VIEW_HEIGHT = 150.f;
 
 -(void)dailyCalendarViewDidSelect:(NSDate *)date
 {
-    
     //You can do any logic after the view select the date
 }
 
@@ -87,20 +103,24 @@ static CGFloat CALENDER_VIEW_HEIGHT = 150.f;
          [tableView registerNib:[UINib nibWithNibName:@"TableViewCell" bundle:nil] forCellReuseIdentifier:cellIdentifier];
          cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
      }
-     cell.assignmentName.text=self.assignmentArray[indexPath.row];
-     cell.cellImageView.image=[UIImage imageNamed:self.imageArray[indexPath.row]];
-     cell.dueDate.text=self.dueDateArray[indexPath.row];
- // Configure the cell...
+     NSDictionary* assignment=[self.assignmentDictionary objectForKey:self.assignmentArray[indexPath.row]];
+     
+     cell.assignmentName.text=[assignment objectForKey:@"name"];
+     //cell.cellImageView.image=[UIImage imageNamed:self.imageArray[indexPath.row]];
+     //cell.dueDate.text=self.dueDateArray[indexPath.row];
+
  
  return cell;
  }
 -(void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    //UIStoryboard* storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    /*
     QuizViewController* vc = [storyboard instantiateViewControllerWithIdentifier:@"QuizViewController"];
     //[self.playerControls closePlayer:YES animated:YES];
     //self.playerControls.locked = YES;
-    [self presentViewController:vc animated:YES completion:nil];
+    [self presentViewController:vc animated:YES completion:nil];*/
+    [self performSegueWithIdentifier:@"showDetail" sender:self];
 
   
 }

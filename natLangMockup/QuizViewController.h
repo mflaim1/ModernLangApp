@@ -11,6 +11,11 @@
 @interface QuizViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *quizTableView;
 @property NSArray* questionArray;
-@property NSDictionary* answerArray;
+@property NSArray* question1;
+@property NSArray* question2;
+@property NSArray* question3;
+@property NSArray* question4;
+@property NSArray* question5;
+
 
 @end

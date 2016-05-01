@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A21B9281CD652B2004E1B11 /* Network.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A21B9271CD652B2004E1B11 /* Network.m */; };
+		6A21B92B1CD6535B004E1B11 /* Models.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A21B92A1CD6535B004E1B11 /* Models.m */; };
+		6A21B92E1CD6564A004E1B11 /* Courses.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A21B92D1CD6564A004E1B11 /* Courses.m */; };
 		6A2E3C381CA06A6000EA9F6A /* CLWeeklyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C2B1CA06A6000EA9F6A /* CLWeeklyCalendarView.m */; };
 		6A2E3C391CA06A6000EA9F6A /* DailyCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C2D1CA06A6000EA9F6A /* DailyCalendarView.m */; };
 		6A2E3C3A1CA06A6000EA9F6A /* DayTitleLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A2E3C2F1CA06A6000EA9F6A /* DayTitleLabel.m */; };
@@ -65,6 +68,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6A21B9261CD652B2004E1B11 /* Network.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Network.h; sourceTree = "<group>"; };
+		6A21B9271CD652B2004E1B11 /* Network.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Network.m; sourceTree = "<group>"; };
+		6A21B9291CD6535B004E1B11 /* Models.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Models.h; sourceTree = "<group>"; };
+		6A21B92A1CD6535B004E1B11 /* Models.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Models.m; sourceTree = "<group>"; };
+		6A21B92C1CD6564A004E1B11 /* Courses.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Courses.h; sourceTree = "<group>"; };
+		6A21B92D1CD6564A004E1B11 /* Courses.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Courses.m; sourceTree = "<group>"; };
 		6A2E3C2A1CA06A6000EA9F6A /* CLWeeklyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CLWeeklyCalendarView.h; sourceTree = "<group>"; };
 		6A2E3C2B1CA06A6000EA9F6A /* CLWeeklyCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CLWeeklyCalendarView.m; sourceTree = "<group>"; };
 		6A2E3C2C1CA06A6000EA9F6A /* DailyCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyCalendarView.h; sourceTree = "<group>"; };
@@ -161,6 +170,35 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		6A21B9231CD65209004E1B11 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6A21B9251CD6522E004E1B11 /* Network */,
+				6A21B9241CD65213004E1B11 /* Models */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		6A21B9241CD65213004E1B11 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6A21B9291CD6535B004E1B11 /* Models.h */,
+				6A21B92A1CD6535B004E1B11 /* Models.m */,
+				6A21B92C1CD6564A004E1B11 /* Courses.h */,
+				6A21B92D1CD6564A004E1B11 /* Courses.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		6A21B9251CD6522E004E1B11 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6A21B9261CD652B2004E1B11 /* Network.h */,
+				6A21B9271CD652B2004E1B11 /* Network.m */,
+			);
+			name = Network;
+			sourceTree = "<group>";
+		};
 		6A9DF2921C7FD2C700F0E4A0 = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +224,7 @@
 		6A9DF29D1C7FD2C700F0E4A0 /* natLangMockup */ = {
 			isa = PBXGroup;
 			children = (
+				6A21B9231CD65209004E1B11 /* Services */,
 				6AC5A1ED1CBAC5D0004273B5 /* TabViews */,
 				6AC5A1EC1CBAC58E004273B5 /* CalendarView */,
 				6A9DF2A11C7FD2C700F0E4A0 /* AppDelegate.h */,
@@ -495,6 +534,9 @@
 				6A2E3C3B1CA06A6000EA9F6A /* NSDate+CL.m in Sources */,
 				6A9DF3071C8106C500F0E4A0 /* TableViewCell.m in Sources */,
 				6A2E3C381CA06A6000EA9F6A /* CLWeeklyCalendarView.m in Sources */,
+				6A21B9281CD652B2004E1B11 /* Network.m in Sources */,
+				6A21B92B1CD6535B004E1B11 /* Models.m in Sources */,
+				6A21B92E1CD6564A004E1B11 /* Courses.m in Sources */,
 				6A9DF2EF1C7FDB4A00F0E4A0 /* AssignmentController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
