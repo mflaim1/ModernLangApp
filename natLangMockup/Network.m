@@ -29,6 +29,7 @@
 -(void) getCourses{
     self.firebaseRef = [[Firebase alloc] initWithUrl:@"https://modernlang.firebaseio.com/courses"];
     [self.firebaseRef observeEventType:FEventTypeValue withBlock:^(FDataSnapshot *snapshot){
+        NSLog(@"WHOA: %@",snapshot.value);
         [[Models sharedModel] setCoursesWithDictionary:snapshot.value];
         [self.delegate courseDownloaded];
         
